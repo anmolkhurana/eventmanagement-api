@@ -1,0 +1,55 @@
+1) Create Organizer:
+
+URL:
+
+http://localhost:8080/eventmanagement-api/organizers
+
+POST Request Body:
+
+{
+  "name" : "Anmol Khurana"
+}
+
+
+Create Event with Venue:
+
+URL:
+
+http://localhost:8080/eventmanagement-api/events
+
+2) POST Request Body:
+
+{
+  "name" : "Spring Data Rest",
+  "description": "The Best Example Ever",
+  "startTime" : "2017-08-29T14:46:18Z",
+  "endTime" : "2017-08-29T16:46:18Z",
+  "zoneId" : "US/Central",
+  "organizer" : "/organizers/1",
+  "venue" : {
+    "name" : "XYZ Catering Services",
+    "streetAddress" : "12345",
+    "streetAddress2" : "Spice Wood Springs",
+    "city" : "Austin",
+    "state" : "Texas",
+    "country" : "United States",
+    "postalCode" : "78750"
+  }
+
+}
+
+
+3) Create Particpant:
+
+URL:
+
+http://localhost:8080/eventmanagement-api/participants
+
+POST Request Body:
+
+{
+  "name" : "John ",
+  "email" : "johnf@gmail.com",
+  "event" : "/events/1",
+  "checkedIn":"false"
+}
