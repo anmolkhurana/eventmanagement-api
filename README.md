@@ -16,6 +16,6 @@ NOTES:
 one must put username as "anmol" and password as "anmol" for USER.ROLE 
 one must put username as "admin" and password as "admin" for ADMIN.ROLE
 (check SecurityConfiguration.java class under main/src/com.anmol.eventmanagement/SecurityConfiguration
-I have provided two seperate file that includes SQL quesries for creating tables and other one for testing data when using a rest client
+I have provided two seperate files that includes SQL queries for creating tables and other one for testing data when using a rest client
 on the fly. I have used ARC a google chrome extention as a REST client. One can also use POSTMANT etc. as a rest client. 
 
